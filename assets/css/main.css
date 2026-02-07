@@ -772,6 +772,15 @@ h6 {
   font-size: 14px;
   font-weight: 400;
 }
+.page-title {
+    --default-color: #0b1a33;
+    --heading-color: #0b1a33;
+    --background-color: #f5f7fb;
+}
+    .page-title .breadcrumbs a,
+    .page-title .breadcrumbs a:visited {
+        color: #1ba5e8;
+    }
 
 .page-title .breadcrumbs ol li+li {
   padding-left: 10px;
