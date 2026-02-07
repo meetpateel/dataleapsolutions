@@ -92,12 +92,12 @@
             <div class="service-box">
               <h4>Capabilities</h4>
               <div class="services-list">
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Data Strategy &amp; Roadmapping</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Data Engineering &amp; Integration</span></a>
-                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>AI Automation Delivery</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Analytics &amp; BI Modernization</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Data Governance &amp; Quality</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Enablement &amp; Managed Evolution</span></a>
+                <a href="#cap-data-strategy" data-capability="cap-data-strategy"><i class="bi bi-arrow-right-circle"></i><span>Data Strategy &amp; Roadmapping</span></a>
+                <a href="#cap-data-engineering" data-capability="cap-data-engineering"><i class="bi bi-arrow-right-circle"></i><span>Data Engineering &amp; Integration</span></a>
+                <a href="#cap-ai-automation" data-capability="cap-ai-automation" class="active"><i class="bi bi-arrow-right-circle"></i><span>AI Automation Delivery</span></a>
+                <a href="#cap-analytics-bi" data-capability="cap-analytics-bi"><i class="bi bi-arrow-right-circle"></i><span>Analytics &amp; BI Modernization</span></a>
+                <a href="#cap-governance-quality" data-capability="cap-governance-quality"><i class="bi bi-arrow-right-circle"></i><span>Data Governance &amp; Quality</span></a>
+                <a href="#cap-enablement-evolution" data-capability="cap-enablement-evolution"><i class="bi bi-arrow-right-circle"></i><span>Enablement &amp; Managed Evolution</span></a>
               </div>
             </div><!-- End Services List -->
 
@@ -113,22 +113,101 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>AI Automation Delivery</h3>
-            <p>
-              We design and deliver automation use cases that reduce cycle times, improve consistency, and free teams to focus on higher-value work. Every initiative starts with measurable outcomes so your organization can clearly track operational impact and ROI.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Identify high-friction, repeatable workflows and prioritize the best automation opportunities first.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Deploy production-ready AI services with secure patterns, governance controls, and human-in-the-loop checkpoints.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Integrate automation into your existing data platform, applications, and team operating rhythms for sustained adoption.</span></li>
-            </ul>
-            <p>
-              Our delivery approach combines technical implementation with change enablement so teams can trust and use new workflows quickly. This helps organizations move from isolated pilots to scaled automation programs that support growth and resilience.
-            </p>
-            <p>
-              Typical use cases include service request triage, document and policy workflows, revenue operations support, and compliance-heavy processes where speed and accuracy are both critical. By connecting automation to a clear roadmap, you can compound value quarter over quarter instead of treating AI as a one-off experiment.
-            </p>
+            <div id="cap-data-strategy" class="capability-detail d-none">
+              <img src="assets/img/services.jpg" alt="Data Strategy and Roadmapping" class="img-fluid services-img">
+              <h3>Data Strategy &amp; Roadmapping</h3>
+              <p>
+                Define a practical data and AI roadmap aligned to revenue growth, cost efficiency, and customer experience outcomes. We help leadership teams sequence initiatives into 30-60-90 day milestones and multi-quarter investment plans.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Current-state assessment across architecture, reporting, process maturity, and operating model readiness.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Prioritized use-case portfolio with business cases, expected value, dependencies, and delivery horizons.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Technology strategy covering cloud platforms (AWS, Azure, GCP), lakehouse direction, and governance guardrails.</span></li>
+              </ul>
+              <p>
+                This gives your executive and delivery teams a shared plan, clear ownership, and measurable checkpoints so your transformation delivers compounding value instead of isolated projects.
+              </p>
+            </div>
+
+            <div id="cap-data-engineering" class="capability-detail d-none">
+              <img src="assets/img/services.jpg" alt="Data Engineering and Integration" class="img-fluid services-img">
+              <h3>Data Engineering &amp; Integration</h3>
+              <p>
+                Design and implement robust pipelines, lakehouse models, and orchestration to ensure trusted data availability. We modernize ingestion, transformation, and consumption layers so teams can move from manual reporting to decision-grade data products.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Build scalable pipelines using tools such as Databricks, Snowflake, dbt, Airflow, and cloud-native services.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Unify ERP, CRM, operational, and third-party data sources with resilient integration and observability patterns.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Implement semantic models, reusable data contracts, and CI/CD release practices for reliable change management.</span></li>
+              </ul>
+              <p>
+                The result is a dependable data foundation that supports analytics, AI, and operational workflows without constant fire-fighting.
+              </p>
+            </div>
+
+            <div id="cap-ai-automation" class="capability-detail">
+              <img src="assets/img/services.jpg" alt="AI Automation Delivery" class="img-fluid services-img">
+              <h3>AI Automation Delivery</h3>
+              <p>
+                Deliver automation use cases that reduce cycle times and free teams for higher-value work. Every initiative starts with measurable outcomes so your organization can track operational impact, quality improvements, and ROI.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Identify high-friction, repeatable workflows and prioritize automation opportunities with the strongest business case.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Deploy secure, production-ready AI services using LLM frameworks, RAG patterns, and human-in-the-loop controls.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Integrate AI into enterprise systems (Microsoft 365, CRM, service tools, and internal apps) for sustained adoption.</span></li>
+              </ul>
+              <p>
+                Our teams work across OpenAI/Azure OpenAI ecosystems, vector stores, API orchestration, and monitoring to move from pilot to scaled automation with confidence.
+              </p>
+            </div>
+
+            <div id="cap-analytics-bi" class="capability-detail d-none">
+              <img src="assets/img/services.jpg" alt="Analytics and BI Modernization" class="img-fluid services-img">
+              <h3>Analytics &amp; BI Modernization</h3>
+              <p>
+                Transform dashboards into decision systems with self-service analytics, forecasting, and KPI governance. We streamline reporting experiences so stakeholders can move from data access to action faster.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Modernize BI platforms including Power BI, Tableau, and Looker with governed semantic models.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Standardize KPI definitions, scorecards, and business logic to eliminate metric drift across teams.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Embed advanced analytics, forecasting, and scenario planning into executive and operational reporting.</span></li>
+              </ul>
+              <p>
+                This creates a consistent decision layer that supports leadership planning, frontline execution, and cross-functional accountability.
+              </p>
+            </div>
+
+            <div id="cap-governance-quality" class="capability-detail d-none">
+              <img src="assets/img/services.jpg" alt="Data Governance and Quality" class="img-fluid services-img">
+              <h3>Data Governance &amp; Quality</h3>
+              <p>
+                Establish standards for data quality, lineage, and stewardship to scale insights confidently across the enterprise. Governance is positioned as an operating advantage, not a compliance checkbox.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Define ownership, stewardship workflows, and policy models across critical data domains.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Implement quality controls, anomaly monitoring, and lineage using platform-native and specialized tooling.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Align governance with security and regulatory priorities including role-based access and audit readiness.</span></li>
+              </ul>
+              <p>
+                With transparent quality signals and accountable ownership, business teams can trust what they see and act with greater speed.
+              </p>
+            </div>
+
+            <div id="cap-enablement-evolution" class="capability-detail d-none">
+              <img src="assets/img/services.jpg" alt="Enablement and Managed Evolution" class="img-fluid services-img">
+              <h3>Enablement &amp; Managed Evolution</h3>
+              <p>
+                Support adoption through training, operating rhythms, and iterative optimization that compounds value over time. We help teams turn new capabilities into durable habits.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Role-based enablement for business users, analysts, engineers, and product owners.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Managed services for platform reliability, backlog execution, and quarterly value optimization.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Continuous improvement loops using adoption metrics, usage analytics, and stakeholder feedback.</span></li>
+              </ul>
+              <p>
+                This ensures your data and AI investments keep evolving with business priorities instead of losing momentum after launch.
+              </p>
+            </div>
           </div>
 
         </div>
@@ -182,6 +261,34 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.services-list a[data-capability]');
+      const sections = document.querySelectorAll('.capability-detail');
+
+      links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const targetId = link.getAttribute('data-capability');
+
+          links.forEach(function (item) {
+            item.classList.remove('active');
+          });
+          link.classList.add('active');
+
+          sections.forEach(function (section) {
+            section.classList.add('d-none');
+          });
+
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.classList.remove('d-none');
+          }
+        });
+      });
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
