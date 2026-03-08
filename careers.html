@@ -32,6 +32,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- reCAPTCHA v2 -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="careers-page">
@@ -278,10 +280,18 @@
                   <textarea class="form-control" name="message" rows="5" placeholder="Tell us about yourself — your experience, what excites you about this role, and why you'd be a great fit at DataLeap." required=""></textarea>
                 </div>
 
+                <div class="col-md-12">
+                  <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                </div>
+
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your application has been submitted. Thank you! Please remember to email your resume to meet.pateel@gmail.com.</div>
+                  <div class="sent-message">
+                    <i class="bi bi-check-circle"></i>
+                    <h3>Application Submitted!</h3>
+                    <p>Thank you for your interest in joining DataLeap. Please remember to email your resume to <a href="mailto:meet.pateel@gmail.com">meet.pateel@gmail.com</a>. We'll be in touch!</p>
+                  </div>
 
                   <button type="submit">Submit Application</button>
                 </div>
