@@ -32,8 +32,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- reCAPTCHA v2 -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- reCAPTCHA v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeQ7oMsAAAAALHmLgRSsAhAGBUVmgcJnqL_WhIh"></script>
 </head>
 
 <body class="careers-page">
@@ -280,9 +280,7 @@
                   <textarea class="form-control" name="message" rows="5" placeholder="Tell us about yourself — your experience, what excites you about this role, and why you'd be a great fit at DataLeap." required=""></textarea>
                 </div>
 
-                <div class="col-md-12">
-                  <div class="g-recaptcha" data-sitekey="6LeQ7oMsAAAAALHmLgRSsAhAGBUVmgcJnqL_WhIh"></div>
-                </div>
+                <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
