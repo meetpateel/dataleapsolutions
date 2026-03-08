@@ -101,6 +101,43 @@ h6 {
   font-weight: 600;
 }
 
+.php-email-form.form-submitted .row {
+  display: none;
+}
+
+.php-email-form.form-submitted .sent-message {
+  display: block;
+  padding: 40px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.php-email-form.form-submitted .sent-message i {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.php-email-form.form-submitted .sent-message h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.php-email-form.form-submitted .sent-message p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.php-email-form.form-submitted .sent-message a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.php-email-form .g-recaptcha {
+  margin-bottom: 5px;
+}
+
 .php-email-form .loading {
   display: none;
   background: var(--surface-color);
