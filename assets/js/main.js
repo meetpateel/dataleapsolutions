@@ -165,4 +165,13 @@
     });
   });
 
+  /**
+   * Form Validation - Add Bootstrap validated styles on submit
+   */
+  document.querySelectorAll('.php-email-form').forEach((form) => {
+    form.addEventListener('submit', () => {
+      form.classList.add('was-validated');
+    });
+  });
+
 })();
