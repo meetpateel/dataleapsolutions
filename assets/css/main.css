@@ -1260,6 +1260,28 @@ section,
   transform: translateY(-4px);
 }
 
+.btn-apply {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-apply:hover {
+  color: color-mix(in srgb, var(--accent-color), black 20%);
+}
+
+.btn-apply i {
+  margin-left: 4px;
+  transition: 0.3s;
+}
+
+.btn-apply:hover i {
+  transform: translateX(4px);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
