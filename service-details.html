@@ -5,8 +5,15 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>DataLeap Services | Service Details</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="DataLeap consulting services: data strategy, Databricks and Snowflake engineering, Azure OpenAI automation, Power BI and Tableau analytics, and managed support.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DataLeap Services | Service Details">
+  <meta property="og:description" content="DataLeap consulting services: data strategy, Databricks and Snowflake engineering, Azure OpenAI automation, Power BI and Tableau analytics, and managed support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dataleapsolutions.com/service-details.html">
+  <meta property="og:image" content="https://dataleapsolutions.com/assets/img/logo.png">
+  <meta property="og:site_name" content="DataLeap">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -21,19 +28,10 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Presento
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="service-details-page">
@@ -42,22 +40,18 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DataLeap</h1>
-        <span>.</span>
+        <img src="assets/img/dataleap-logo.svg" alt="DataLeap">
+        <h1 class="sitename visually-hidden">DataLeap</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
-          <ul>
-              <li><a href="index.html#hero" class="active">Home<br></a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#solutions">Solutions</a></li>
-              <li><a href="index.html#services">Services</a></li>
-              <!--<li><a href="#case-studies">Case Studies</a></li>-->
-              <!--<li><a href="index.html#contact">Contact</a></li>-->
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <ul>
+          <li><a href="index.html#hero">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service-details.html" class="active">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <a class="btn-getstarted" href="index.html#contact">Contact</a>
@@ -107,7 +101,7 @@
               <i class="bi bi-headset help-icon"></i>
               <h4>Have a Question?</h4>
               <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 605-370-3803</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:meet.pateel@gmail.com">meet.pateel@gmail.com</a></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a></p>
             </div>
 
           </div>
@@ -124,14 +118,14 @@
                 <li><i class="bi bi-check-circle"></i> <span>Technology strategy covering cloud platforms (AWS, Azure, GCP), lakehouse direction, and governance guardrails.</span></li>
               </ul>
               <p>
-                This gives your executive and delivery teams a shared plan, clear ownership, and measurable checkpoints so your transformation delivers compounding value instead of isolated projects.
+                You walk away with a written roadmap document, a prioritized backlog of 10–15 use cases with estimated effort and business value, and a recommended technology architecture (Databricks vs. Snowflake, cloud selection, BI platform) — typically delivered in 3–4 weeks.
               </p>
             </div>
 
             <div id="cap-data-engineering" class="capability-detail d-none">
               <h3>Data Engineering &amp; Integration</h3>
               <p>
-                Design and implement robust pipelines, lakehouse models, and orchestration to ensure trusted data availability. We modernize ingestion, transformation, and consumption layers so teams can move from manual reporting to decision-grade data products.
+                Design and implement robust pipelines, lakehouse models, and orchestration to ensure trusted data availability. We modernize ingestion, transformation, and consumption layers so teams can query clean, tested, documented datasets instead of downloading CSVs and reconciling spreadsheets.
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> <span>Build scalable pipelines using tools such as Databricks, Snowflake, dbt, Airflow, and cloud-native services.</span></li>
@@ -139,7 +133,7 @@
                 <li><i class="bi bi-check-circle"></i> <span>Implement semantic models, reusable data contracts, and CI/CD release practices for reliable change management.</span></li>
               </ul>
               <p>
-                The result is a dependable data foundation that supports analytics, AI, and operational workflows without constant fire-fighting.
+                The result: a production lakehouse with CI/CD-deployed dbt models, automated data quality alerts, and pipeline monitoring — typically stood up in 8–12 weeks depending on source system complexity.
               </p>
             </div>
 
@@ -150,11 +144,11 @@
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> <span>Identify high-friction, repeatable workflows and prioritize automation opportunities with the strongest business case.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Deploy secure, production-ready AI services using LLM frameworks, RAG patterns, and human-in-the-loop controls.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Deploy production AI services using Azure OpenAI (GPT-4), vector stores (Azure AI Search, Pinecone), and retrieval-augmented generation with human-in-the-loop approval gates.</span></li>
                 <li><i class="bi bi-check-circle"></i> <span>Integrate AI into enterprise systems (Microsoft 365, CRM, service tools, and internal apps) for sustained adoption.</span></li>
               </ul>
               <p>
-                Our teams work across OpenAI/Azure OpenAI ecosystems, vector stores, API orchestration, and monitoring to move from pilot to scaled automation with confidence.
+                We work across the Azure OpenAI ecosystem, vector stores, API orchestration, and monitoring to move from pilot to scaled automation with confidence. Typical pilot-to-production timeline: 6–10 weeks.
               </p>
             </div>
 
@@ -169,7 +163,7 @@
                 <li><i class="bi bi-check-circle"></i> <span>Embed advanced analytics, forecasting, and scenario planning into executive and operational reporting.</span></li>
               </ul>
               <p>
-                This creates a consistent decision layer that supports leadership planning, frontline execution, and cross-functional accountability.
+                For example, a healthcare client gets patient volume and revenue cycle dashboards refreshing hourly; an agriculture client gets yield-per-acre tracking by field. The reporting layer refreshes automatically and replaces the manual consolidation your analysts currently spend 10+ hours per week on.
               </p>
             </div>
 
@@ -180,7 +174,7 @@
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> <span>Define ownership, stewardship workflows, and policy models across critical data domains.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Implement quality controls, anomaly monitoring, and lineage using platform-native and specialized tooling.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Implement dbt tests, Great Expectations checks, and anomaly alerting using Databricks or Snowflake-native monitoring — with lineage tracked from source to dashboard.</span></li>
                 <li><i class="bi bi-check-circle"></i> <span>Align governance with security and regulatory priorities including role-based access and audit readiness.</span></li>
               </ul>
               <p>
@@ -191,7 +185,7 @@
             <div id="cap-enablement-evolution" class="capability-detail d-none">
               <h3>Enablement &amp; Managed Evolution</h3>
               <p>
-                Support adoption through training, operating rhythms, and iterative optimization that compounds value over time. We help teams turn new capabilities into durable habits.
+                Support adoption through structured knowledge transfer, written runbooks, and a 90-day managed support engagement. We do not disappear after go-live.
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> <span>Role-based enablement for business users, analysts, engineers, and product owners.</span></li>
@@ -199,7 +193,7 @@
                 <li><i class="bi bi-check-circle"></i> <span>Continuous improvement loops using adoption metrics, usage analytics, and stakeholder feedback.</span></li>
               </ul>
               <p>
-                This ensures your data and AI investments keep evolving with business priorities instead of losing momentum after launch.
+                Concretely: your team gets 4 hours/week of dedicated support for 90 days, a monthly optimization review, and a prioritized enhancement backlog so the platform improves continuously based on actual usage data.
               </p>
             </div>
           </div>
@@ -210,6 +204,15 @@
 
     </section><!-- /Service Details Section -->
 
+    <!-- CTA Section -->
+    <section class="section section-bg dark-background">
+      <div class="container text-center" data-aos="fade-up">
+        <h2>Let's discuss your project</h2>
+        <p class="mt-3 mb-4">Tell us about your data challenges. We'll follow up within one business day with a concrete proposal — fixed scope, clear timeline, no surprises.</p>
+        <a href="index.html#contact" class="btn-getstarted">Book a Consultation</a>
+      </div>
+    </section>
+
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -218,27 +221,31 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">DataLeap</span>
+            <img src="assets/img/dataleap-logo-light.svg" alt="DataLeap logo">
           </a>
           <div class="footer-contact pt-3">
-            <p>5100 North Cliff Ave,</p>
-            <p>Sioux Falls, SD 57104</p>
+            <p>Based in Sioux Falls, SD</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 605-370-3803</span></p>
-            <p><strong>Email:</strong> <span>meet.pateel@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>info@dataleapsolution.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/iammeetpatel/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-
-
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">DataLeap</strong> <span>All Rights Reserved</span></p>
+      <p>© 2024–2026 Data Leap Solutions Inc. All Rights Reserved.</p>
     </div>
 
   </footer>
@@ -248,13 +255,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {

@@ -5,8 +5,73 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>DataLeap | AI & Data Solutions</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="DataLeap builds production data pipelines on Databricks and Snowflake, deploys AI automation with Azure OpenAI, and delivers governed BI dashboards. Boutique consultancy in Sioux Falls, SD.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DataLeap | AI & Data Solutions">
+  <meta property="og:description" content="DataLeap builds production data pipelines on Databricks and Snowflake, deploys AI automation with Azure OpenAI, and delivers governed BI dashboards. Boutique consultancy in Sioux Falls, SD.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dataleapsolutions.com/">
+  <meta property="og:image" content="https://dataleapsolutions.com/assets/img/logo.png">
+  <meta property="og:site_name" content="DataLeap">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DataLeap",
+    "legalName": "Data Leap Solutions Inc",
+    "description": "Boutique data engineering and AI consultancy serving healthcare, agriculture, financial services, and manufacturing teams. We build production pipelines on Databricks and Snowflake, deploy Azure OpenAI automation, and deliver governed BI dashboards.",
+    "url": "https://dataleapsolutions.com",
+    "telephone": "+1-605-370-3803",
+    "email": "info@dataleapsolution.com",
+    "areaServed": "Sioux Falls, SD",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sioux Falls",
+      "addressRegion": "SD",
+      "addressCountry": "US"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Data & AI Consulting Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Strategy & Roadmapping" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Engineering & Integration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation Delivery" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Analytics & BI Modernization" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Governance & Quality" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enablement & Managed Evolution" } }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DataLeap",
+    "legalName": "Data Leap Solutions Inc",
+    "url": "https://dataleapsolutions.com",
+    "logo": "https://dataleapsolutions.com/assets/img/logo.png",
+    "foundingDate": "2024",
+    "founder": {
+      "@type": "Person",
+      "name": "Meet Patel",
+      "url": "https://www.linkedin.com/in/iammeetpatel/"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/iammeetpatel/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-605-370-3803",
+      "email": "info@dataleapsolution.com",
+      "contactType": "customer service"
+    }
+  }
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -21,19 +86,12 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Presento
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- reCAPTCHA v2 -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="index-page">
@@ -42,21 +100,16 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DataLeap</h1>
-        <span>.</span>
+        <img src="assets/img/dataleap-logo.svg" alt="DataLeap">
+        <h1 class="sitename visually-hidden">DataLeap</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
           <ul>
               <li><a href="#hero" class="active">Home<br></a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#solutions">Solutions</a></li>
-              <li><a href="#services">Services</a></li>
-
-              <!--<li><a href="#case-studies">Case Studies</a></li>-->
-              <!--<li><a href="#contact">Contact</a></li>-->
+              <li><a href="about.html">About</a></li>
+              <li><a href="service-details.html">Services</a></li>
+              <li><a href="careers.html">Careers</a></li>
           </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -71,13 +124,13 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="Data engineering and AI consulting" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h2 data-aos="fade-up" data-aos-delay="100">Build a smarter data foundation that accelerates AI and analytics outcomes.</h2>
-            <p data-aos="fade-up" data-aos-delay="200">DataLeap designs modern data engineering platforms, automates decision workflows with AI, and transforms reporting into real-time business intelligence.</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Data platforms on Snowflake &amp; Databricks. AI automation with Azure OpenAI. Dashboards in Power BI &amp; Tableau.</h2>
+            <p data-aos="fade-up" data-aos-delay="200">DataLeap is a founder-led consultancy that builds production data pipelines, deploys LLM-powered automation, and delivers governed BI dashboards for healthcare, agriculture, financial services, and manufacturing teams.</p>
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
               <a href="#contact" class="btn-get-started">Book a Consultation</a>
             </div>
@@ -87,62 +140,6 @@
       </div>
 
     </section><!-- /Hero Section -->
-
-    <!-- Clients Section -->
-    <!--<section id="clients" class="clients section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section>--><!-- /Clients Section -->
 
     <!-- About Section -->
     <section id="about" class="about section section-bg dark-background">
@@ -154,12 +151,17 @@
             <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
                 <h3>Capabilities built for growth-stage and enterprise teams</h3>
                 <p>
-                    We partner with operations, finance, and product leaders to unify fragmented data, reduce manual reporting cycles, and create trusted pipelines that scale with your business.
+                    We partner with operations and finance leaders in healthcare, agriculture, financial services, and manufacturing to replace fragmented spreadsheets and manual reporting with automated, tested data pipelines.
                 </p>
                 <a href="#services" class="about-btn align-self-center align-self-xl-start">
                     <span>Explore Capabilities</span>
                     <i class="bi bi-chevron-right"></i>
                 </a>
+                <a href="about.html" class="about-btn align-self-center align-self-xl-start mt-2">
+                    <span>Meet Our Founder</span>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+                <p class="mt-3" class="disclaimer-text">DataLeap is a brand of Data Leap Solutions Inc, a South Dakota corporation.</p>
             </div>
 
           <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
@@ -168,25 +170,25 @@
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-briefcase"></i>
                 <h4><span class="stretched-link">Data Platform Engineering</span></h4>
-                <p>Cloud-native architectures, reliable ETL/ELT pipelines, and governed data products designed for speed and accuracy.</p>
+                <p>Databricks and Snowflake lakehouses, dbt transformation pipelines with automated testing, and Airflow-orchestrated ingestion from ERP, CRM, and operational systems.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-gem"></i>
                 <h4><span class="stretched-link">AI Workflow Automation</span></h4>
-                <p>Automate repetitive analysis and approvals using AI copilots, intelligent routing, and measurable control points.</p>
+                <p>Azure OpenAI-powered document processing, RAG pipelines over internal knowledge bases, and LLM integrations embedded into existing Microsoft 365 and CRM workflows.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-broadcast"></i>
                 <h4><span class="stretched-link">Advanced Analytics</span></h4>
-                <p>Move from static dashboards to predictive insights that support faster planning, forecasting, and optimization.</p>
+                <p>Power BI, Tableau, and Looker dashboards backed by governed semantic models — replacing spreadsheet consolidation with self-service reporting and demand forecasting.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-easel"></i>
                 <h4><span class="stretched-link">Change Enablement</span></h4>
-                <p>Upskill teams, document operating models, and embed governance so transformation sticks beyond launch.</p>
+                <p>Hands-on training workshops, runbook documentation, and a 90-day post-launch support period with weekly office hours so your team operates independently.</p>
               </div><!-- Icon-Box -->
 
             </div>
@@ -197,51 +199,6 @@
       </div>
 
     </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <!--<section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div>--><!-- End Stats Item -->
-
-          <!--<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>--><!-- End Stats Item -->
-
-          <!--<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>--><!-- End Stats Item -->
-
-          <!--<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
-            </div>
-          </div>--><!-- End Stats Item -->
-
-        <!--</div>
-
-      </div>
-
-    </section>--><!-- /Stats Section -->
 
     <!-- Tabs Section -->
     <section id="solutions" class="tabs section">
@@ -280,23 +237,23 @@
           <div class="tab-pane fade active show" id="tabs-tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Create a resilient data backbone for every mission-critical workflow.</h3>
+                <h3>Build a Databricks or Snowflake lakehouse with tested dbt models and automated ingestion.</h3>
                 <p class="fst-italic">
-                  We connect source systems, apply quality controls, and publish trustworthy datasets your teams can use with confidence.
+                  We connect ERP systems (SAP, NetSuite, Sage), CRMs (Salesforce, HubSpot), and operational databases into a single governed lakehouse on AWS, Azure, or GCP.
                 </p>
                 <ul>
                   <li><i class="bi bi-check2-all"></i>
-                    <span>Unified ingestion across cloud apps, databases, and legacy systems.</span>
+                    <span>Automated ingestion pipelines orchestrated with Airflow, pulling from REST APIs, SFTP feeds, databases, and SaaS platforms on a defined schedule.</span>
                   </li>
-                  <li><i class="bi bi-check2-all"></i> <span>Automated data validation that reduces reconciliation effort.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Governed semantic layers that keep KPIs consistent across every team.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>dbt tests and data quality checks on every pipeline run, alerting your team to anomalies before they reach dashboards.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Governed semantic layers in Power BI or Looker that standardize KPI definitions across finance, operations, and sales.</span></li>
                 </ul>
                 <p>
-                  The result is a scalable platform that shortens time-to-insight and supports AI-ready data consumption across departments.
+                  The deliverable is a production data platform with CI/CD deployment, monitoring, and documentation — typically operational within 8–12 weeks.
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-1.jpg" alt="Building a data foundation with Databricks and Snowflake" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -304,22 +261,22 @@
           <div class="tab-pane fade" id="tabs-tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Deploy AI automation that improves throughput without losing control.</h3>
+                <h3>Deploy Azure OpenAI-powered automation with RAG pipelines and human-in-the-loop controls.</h3>
                 <p>
-                  We prioritize high-friction workflows and implement automation patterns that improve speed while preserving auditability.
+                  We identify your highest-friction manual workflows — invoice processing, contract review, support ticket triage — and build LLM-powered automation using Azure OpenAI, vector stores, and retrieval-augmented generation (RAG).
                 </p>
                 <p class="fst-italic">
-                  Teams keep full visibility with human-in-the-loop checkpoints, exception handling, and measurable service levels.
+                  Delivered in Agile 2-week sprints with pilot-to-production timelines of 6–10 weeks.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Intelligent document processing and workflow triage for back-office teams.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Human-in-the-loop approvals to maintain compliance and quality.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Performance dashboards that track cycle-time reduction and ROI.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Secure deployment patterns for enterprise AI services.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Invoice extraction, contract clause identification, and support ticket classification using structured LLM output parsing.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Human-in-the-loop approval gates to maintain compliance and quality at every step.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Performance dashboards that track cycle-time reduction, accuracy rates, and ROI per automation.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Private deployment on Azure with role-based access, prompt logging, and cost monitoring — no data leaves your tenant.</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-2.jpg" alt="AI workflow automation with Azure OpenAI" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -327,21 +284,21 @@
           <div class="tab-pane fade" id="tabs-tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Modernize analytics to move from hindsight to foresight.</h3>
+                <h3>Replace spreadsheet reporting with governed Power BI, Tableau, or Looker dashboards.</h3>
                 <p>
-                  We redesign reporting around business decisions, so leaders can move from lagging indicators to predictive action.
+                  We build reporting around the decisions your team actually makes — executive scorecards, operational dashboards, and embedded forecasting models.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Executive scorecards with drill-downs into operational drivers.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Forecasting models that improve planning accuracy across functions.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Alerting and anomaly detection that surfaces risk before it impacts results.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Executive scorecards in Power BI or Tableau with drill-through to operational drivers and row-level security.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Demand forecasting and planning models built in Python or Databricks ML, surfaced directly in your BI tool.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Automated alerting and anomaly detection that surfaces risk before it hits your P&amp;L.</span></li>
                 </ul>
                 <p class="fst-italic">
-                  Decision-makers gain trusted self-service analytics without relying on manual spreadsheet consolidation.
+                  For healthcare clients, that means patient volume and revenue cycle dashboards refreshing hourly. For agriculture, yield-per-acre tracking by field. No more Monday-morning spreadsheet scrambles.
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-3.jpg" alt="Analytics modernization with Power BI and Tableau dashboards" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -349,21 +306,21 @@
           <div class="tab-pane fade" id="tabs-tab-4">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Embed change so new capabilities become everyday habits.</h3>
+                <h3>Transfer ownership with training workshops, runbooks, and 90-day post-launch support.</h3>
                 <p>
-                  Transformation succeeds when teams adopt new behaviors, ownership models, and governance routines.
+                  We follow an Agile, DataOps-aligned delivery methodology: 2-week sprints, demo-driven feedback, and documented handoff. Every engagement ends with a structured knowledge transfer, not an abrupt cutover.
                 </p>
                 <p class="fst-italic">
-                  We align stakeholders, document standards, and coach teams so improvements continue long after launch.
+                  Your team walks away with the skills and documentation to operate independently.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Role-based enablement plans for analysts, managers, and technical teams.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Operating cadences that monitor data quality and delivery performance.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Continuous improvement backlogs to expand value quarter after quarter.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>4-hour hands-on training workshops tailored to analysts (SQL + BI), managers (dashboard interpretation), and engineers (pipeline maintenance).</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Monthly data quality review meetings and a shared Kanban backlog for ongoing enhancement requests.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Quarterly business review comparing platform usage against the original business case, with prioritized next-phase recommendations.</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-4.jpg" alt="Knowledge transfer and team enablement" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -380,7 +337,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Capabilities</h2>
-        <p>From data engineering foundations to AI-powered operations, we deliver integrated transformation programs tied to business value.</p>
+        <p>From Snowflake and Databricks pipelines to Azure OpenAI automation and Power BI dashboards — concrete deliverables, not slide decks.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -392,7 +349,7 @@
               <i class="bi bi-briefcase icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Data Strategy & Roadmapping</a></h4>
-                <p class="description">Define a practical data and AI roadmap aligned to revenue growth, cost efficiency, and customer experience outcomes.</p>
+                <p class="description">Deliver a 30-60-90 day data and AI roadmap with prioritized use cases, platform recommendations (Databricks vs. Snowflake, cloud selection), and investment estimates.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -402,7 +359,7 @@
               <i class="bi bi-card-checklist icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Data Engineering & Integration</a></h4>
-                <p class="description">Design and implement robust pipelines, lakehouse models, and orchestration to ensure trusted data availability.</p>
+                <p class="description">Build production Databricks or Snowflake pipelines with dbt transformations, Airflow orchestration, and automated data quality testing.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -412,7 +369,7 @@
               <i class="bi bi-bar-chart icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">AI Automation Delivery</a></h4>
-                <p class="description">Deliver automation use cases that reduce cycle times and free teams for higher-value work.</p>
+                <p class="description">Deploy Azure OpenAI-powered automation — document processing, RAG-based Q&amp;A, and workflow triage — from pilot to production in 6–10 weeks.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -422,7 +379,7 @@
               <i class="bi bi-binoculars icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Analytics & BI Modernization</a></h4>
-                <p class="description">Transform dashboards into decision systems with self-service analytics, forecasting, and KPI governance.</p>
+                <p class="description">Modernize reporting in Power BI, Tableau, or Looker with governed semantic models, row-level security, and embedded forecasting.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -432,7 +389,7 @@
               <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Data Governance & Quality</a></h4>
-                <p class="description">Establish standards for data quality, lineage, and stewardship to scale insights confidently across the enterprise.</p>
+                <p class="description">Implement data quality frameworks with automated dbt tests, lineage documentation, and stewardship workflows for your critical data domains.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -442,7 +399,7 @@
               <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Enablement & Managed Evolution</a></h4>
-                <p class="description">Support adoption through training, operating rhythms, and iterative optimization that compounds value over time.</p>
+                <p class="description">Hands-on training workshops, operational runbooks, and a 90-day managed support period with monthly optimization reviews.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -453,558 +410,150 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Portfolio Section -->
-    <!--<section id="case-studies" class="portfolio section">-->
+    <!-- Why DataLeap Section -->
+    <section id="why-dataleap" class="about section">
 
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Proof in Delivery</h2>
-        <p>Explore examples of how DataLeap turns complex data challenges into measurable performance improvements.</p>
-      </div>--><!-- End Section Title -->
-
-      <!--<div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul>--><!-- End Portfolio Filters -->
-
-          <!--<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Outcome-focused transformation delivered with measurable business impact.</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>--><!-- End Portfolio Item -->
-
-          <!--</div>--><!-- End Portfolio Container -->
-
-        <!--</div>
-
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why DataLeap</h2>
+        <p>What sets a boutique consultancy apart from the big firms and freelancers.</p>
       </div>
 
-    </section>--><!-- /Portfolio Section -->
-
-    <!-- Testimonials Section -->
-    <!--<section id="testimonials" class="testimonials section">-->
-
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>--><!-- End Section Title -->
-
-      <!--<div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 10
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>--><!-- End testimonial item -->
-
-            <!--<div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>--><!-- End testimonial item -->
-
-            <!--<div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>--><!-- End testimonial item -->
-
-            <!--<div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>--><!-- End testimonial item -->
-
-            <!--<div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>--><!-- End testimonial item -->
-
-          <!--</div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section>--><!-- /Testimonials Section -->
-
-    <!-- Pricing Section -->
-    <!--<section id="pricing" class="pricing section section-bg dark-background">-->
-
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>--><!-- End Section Title -->
-
-      <!--<div class="container">
-
-        <div class="row g-4 g-lg-0">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div>--><!-- End Pricing Item -->
-
-          <!--<div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div>--><!-- End Pricing Item -->
-
-          <!--<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div>--><!-- End Pricing Item -->
-
-        <!--</div>
-
-      </div>
-
-    </section>--><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <!--<section id="faq" class="faq section">-->
-
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Engagement FAQs</h2>
-        <p>Answers to common questions about timelines, collaboration models, and how we deliver measurable transformation outcomes.</p>
-      </div>--><!-- End Section Title -->
-
-      <!--<div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>How quickly can we launch a first data and AI use case?</h3>
-                <div class="faq-content">
-                  <p>Most clients start with a 2-4 week discovery sprint, followed by a 6-12 week implementation focused on one high-impact workflow and clear success metrics.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>--><!-- End Faq item-->
-
-              <!--<div class="faq-item">
-                <h3>Do you work with our existing cloud and BI stack?</h3>
-                <div class="faq-content">
-                  <p>Yes. We are tooling-agnostic and typically integrate with your current warehouse, orchestration, visualization, and governance platforms before recommending changes.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>--><!-- End Faq item-->
-
-              <!--<div class="faq-item">
-                <h3>How do you measure project success?</h3>
-                <div class="faq-content">
-                  <p>We define baseline metrics up front, such as reporting cycle time, data quality scores, and automation throughput, then track improvement with your leadership team.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>--><!-- End Faq item-->
-
-              <!--<div class="faq-item">
-                <h3>Can you support both strategy and execution?</h3>
-                <div class="faq-content">
-                  <p>Absolutely. We help define the vision, prioritize a phased roadmap, and then build alongside your team to accelerate time-to-value.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>--><!-- End Faq item-->
-
-              <!--<div class="faq-item">
-                <h3>How involved does our internal team need to be?</h3>
-                <div class="faq-content">
-                  <p>We work as a blended team. Your subject-matter experts guide priorities while DataLeap handles architecture, implementation, and enablement.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>--><!-- End Faq item-->
-
-              <!--<div class="faq-item">
-                <h3>What happens after launch?</h3>
-                <div class="faq-content">
-                  <p>We can transition ownership to your team or provide ongoing optimization support to expand new use cases and sustain performance.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>--><!-- End Faq item-->
-
-            <!--</div>
-
-          </div>--><!-- End Faq Column-->
-
-        <!--</div>
-
-      </div>
-
-    </section>--><!-- /Faq Section -->
-
-    <!-- Team Section -->
-    <!--<section id="team" class="team section section-bg dark-background">-->
-
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>--><!-- End Section Title -->
-
-      <!--<div class="container">
-
+      <div class="container">
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-person-check icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title">Founder-Led Delivery</h4>
+                <p class="description">You work directly with a senior engineer — not a rotating team of juniors. Every engagement is personally overseen from kickoff through handoff.</p>
               </div>
             </div>
-          </div>--><!-- End Team Member -->
+          </div>
 
-          <!--<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-shield-check icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title">Fixed-Scope, No Surprises</h4>
+                <p class="description">Every project starts with a detailed scope and timeline. You know exactly what you're getting, what it costs, and when it ships — before we start.</p>
               </div>
             </div>
-          </div>--><!-- End Team Member -->
+          </div>
 
-          <!--<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-arrow-repeat icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title">90-Day Post-Launch Support</h4>
+                <p class="description">We don't disappear after go-live. Every engagement includes 90 days of support with weekly office hours and monthly optimization reviews.</p>
               </div>
             </div>
-          </div>--><!-- End Team Member -->
+          </div>
 
-          <!--<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-building icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title">Industry Focus</h4>
+                <p class="description">Deep domain experience in healthcare, agriculture, financial services, and manufacturing — not a generalist shop learning your industry on your dime.</p>
               </div>
             </div>
-          </div>--><!-- End Team Member -->
+          </div>
 
-        <!--</div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-file-earmark-code icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title">You Own Everything</h4>
+                <p class="description">All code, documentation, and infrastructure belongs to you. No vendor lock-in, no proprietary frameworks, no recurring license fees for what we build.</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-lightning icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title">Fast Time to Value</h4>
+                <p class="description">Agile 2-week sprints with working demos, not months of requirements gathering. Most projects reach production in 8-12 weeks.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-    </section>--><!-- /Team Section -->
+    </section><!-- /Why DataLeap Section -->
+
+    <!-- How We Work Section -->
+    <section id="how-we-work" class="tabs section section-bg dark-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>How We Work</h2>
+        <p>A straightforward four-phase engagement model from discovery to independent operation.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="p-4">
+              <i class="bi bi-1-circle" class="process-icon"></i>
+              <h4 class="mt-3">Discover</h4>
+              <p>Free 30-minute strategy call to understand your data landscape, pain points, and goals. We assess readiness and identify quick wins.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="p-4">
+              <i class="bi bi-2-circle" class="process-icon"></i>
+              <h4 class="mt-3">Scope & Propose</h4>
+              <p>Within one week, you receive a detailed proposal with fixed scope, timeline, deliverables, and investment — no ambiguity.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="p-4">
+              <i class="bi bi-3-circle" class="process-icon"></i>
+              <h4 class="mt-3">Build & Iterate</h4>
+              <p>Agile 2-week sprints with demo sessions after each sprint. You see progress, give feedback, and steer direction continuously.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="p-4">
+              <i class="bi bi-4-circle" class="process-icon"></i>
+              <h4 class="mt-3">Handoff & Support</h4>
+              <p>Structured knowledge transfer with training workshops, runbooks, and 90 days of post-launch support with weekly office hours.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /How We Work Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Let's Plan Your Transformation</h2>
-        <p>Share your goals, and our team will propose a practical path to modernize your data platform, automate workflows, and scale analytics impact.</p>
+        <h2>Book a Free 30-Minute Data Strategy Call</h2>
+        <p>Tell me about your current data challenges. I'll follow up within one business day with a preliminary assessment and a concrete proposal for your first 90 days — no generic slide decks, no sales team handoff.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-          <div class="col-lg-10">
+          <div class="col-lg-6">
             <div class="row gy-4">
 
               <div class="col-lg-12">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>5100 North Cliff Ave, Sioux Falls, SD 57104</p>
+                  <h3>Location</h3>
+                  <p>Based in Sioux Falls, SD</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1020,44 +569,62 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>meet.pateel@gmail.com</p>
+                  <p>info@dataleapsolution.com</p>
                 </div>
               </div><!-- End Info Item -->
 
             </div>
           </div>
 
-          <!--<div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/YOUR_CONTACT_FORM_ID" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500" novalidate>
+              <input type="hidden" name="_subject" value="New Contact Form Submission">
+              <input type="text" name="_gotcha" style="display:none">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required minlength="2">
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="company" placeholder="Company Name">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="role" placeholder="Your Role / Title">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required minlength="3">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required minlength="10"></textarea>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="g-recaptcha" data-sitekey="6Lf37lMsAAAAAEvW66SSgI68O9K8ShBtO4pF_Tk"></div>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">
+                    <i class="bi bi-check-circle"></i>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll follow up within one business day with a preliminary assessment.</p>
+                  </div>
 
                   <button type="submit">Send Message</button>
                 </div>
 
               </div>
             </form>
-          </div>--><!-- End Contact Form -->
+          </div><!-- End Contact Form -->
 
         </div>
 
@@ -1073,27 +640,31 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">DataLeap</span>
+            <img src="assets/img/dataleap-logo-light.svg" alt="DataLeap logo">
           </a>
           <div class="footer-contact pt-3">
-            <p>5100 North Cliff Ave,</p>
-            <p>Sioux Falls, SD 57104</p>
+            <p>Based in Sioux Falls, SD</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 605-370-3803</span></p>
-            <p><strong>Email:</strong> <span>meet.pateel@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>info@dataleapsolution.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/iammeetpatel/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-
-
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">DataLeap</strong> <span>All Rights Reserved</span></p>
+      <p>© 2024–2026 Data Leap Solutions Inc. All Rights Reserved.</p>
     </div>
 
   </footer>
@@ -1105,11 +676,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

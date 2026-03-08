@@ -2,9 +2,9 @@
   <title id="title">DataLeap logo</title>
   <desc id="desc">DataLeap wordmark with abstract upward mark.</desc>
   <g transform="translate(4 6)">
-    <rect x="0" y="0" width="44" height="44" rx="10" fill="#0B1F3A"/>
+    <rect x="0" y="0" width="44" height="44" rx="10" fill="#FFFFFF"/>
     <path d="M12 28L19 20L24 25L33 15" stroke="#1BA5E8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="33" cy="15" r="3" fill="#17D7A0"/>
   </g>
-  <text x="58" y="38" font-family="Poppins, Raleway, Arial, sans-serif" font-weight="700" font-size="32" fill="#0B1F3A" letter-spacing="0.5">Data<tspan fill="#1BA5E8">Leap</tspan></text>
+  <text x="58" y="38" font-family="Poppins, Raleway, Arial, sans-serif" font-weight="700" font-size="32" fill="#FFFFFF" letter-spacing="0.5">Data<tspan fill="#1BA5E8">Leap</tspan></text>
 </svg>
