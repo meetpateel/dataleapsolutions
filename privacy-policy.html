@@ -19,10 +19,6 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +31,8 @@
 </head>
 
 <body class="privacy-policy-page">
+
+  <a href="#main" class="skip-link visually-hidden-focusable">Skip to main content</a>
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -51,7 +49,7 @@
           <li><a href="service-details.html">Services</a></li>
           <li><a href="careers.html">Careers</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button type="button" class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navmenu"></button>
       </nav>
 
       <a class="btn-getstarted" href="index.html#contact">Contact</a>
@@ -59,7 +57,7 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" id="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background">
@@ -78,7 +76,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <p><strong>Effective Date:</strong> March 8, 2026</p>
-        <p><strong>Last Updated:</strong> March 8, 2026</p>
+        <p><strong>Last Updated:</strong> October 11, 2026</p>
 
         <p>Data Leap Solutions Inc ("DataLeap," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy describes how we collect, use, store, and share personal information when you visit our website or submit information through our forms.</p>
 
@@ -88,17 +86,23 @@
         Sioux Falls, SD 57104<br>
         United States<br>
         Email: <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a><br>
-        Phone: +1 605-370-3803</p>
+        Phone: <a href="tel:+16053703803">+1 605-370-3803</a></p>
 
         <hr>
 
         <h3>1. Information We Collect</h3>
-        <p>We collect personal information that you voluntarily provide when you use our website forms:</p>
+        <p>We only collect the information you choose to give us through our website forms. Fields marked optional can be left blank.</p>
         <ul>
-          <li><strong>Contact Form:</strong> Name, email address, phone number, and message content.</li>
-          <li><strong>Career Application Form:</strong> Name, email address, phone number, position applied for, LinkedIn profile URL, and cover letter or message content.</li>
+          <li><strong>Contact Form:</strong> Name, email address, subject, and message. Optional: company name and role/title.</li>
+          <li><strong>Career Application Form:</strong> Name, email address, position applied for, and a message about your background. Optional: phone number and LinkedIn profile URL. If you email us a resume, we receive whatever it contains.</li>
+          <li><strong>Consent record:</strong> When you submit a form, we record that you ticked the consent checkbox, along with the submission date.</li>
         </ul>
-        <p>We do not use cookies, tracking pixels, or third-party analytics tools on this website. We do not automatically collect browsing data, IP addresses, or device information beyond what is inherently logged by our web hosting provider.</p>
+        <p>Please do not send us sensitive information such as government ID numbers, health information, financial account details, or date of birth.</p>
+        <p><strong>Information collected automatically.</strong> We do not use analytics, advertising, or social media tracking tools. The services listed in section 3 receive limited technical data when they are used:</p>
+        <ul>
+          <li><strong>Hosting (GitHub Pages):</strong> Our website is hosted on GitHub Pages, which may log your IP address and browser details for security and operations.</li>
+          <li><strong>Spam protection (Google reCAPTCHA v3):</strong> Only if you accept it in our cookie banner, reCAPTCHA loads on pages with a form and collects device and interaction data (such as IP address, browser information, and mouse movements) to tell humans from bots. See our <a href="cookie-policy.html">Cookie Policy</a>.</li>
+        </ul>
 
         <hr>
 
@@ -107,37 +111,42 @@
         <ul>
           <li>To respond to your inquiries submitted through the contact form.</li>
           <li>To evaluate your candidacy for open positions when you submit a career application.</li>
-          <li>To communicate with you about our services, if you have requested information.</li>
+          <li>To communicate with you about the services you asked about.</li>
+          <li>To protect our forms from spam and abuse.</li>
         </ul>
-        <p>We do not use your information for automated decision-making or profiling.</p>
+        <p>We do not use your information for automated decision-making or profiling, and we do not add you to marketing email lists.</p>
 
         <hr>
 
-        <h3>3. Data Sharing</h3>
-        <p>We do not sell, rent, or trade your personal information to third parties. We may share your information only in the following circumstances:</p>
+        <h3>3. Data Sharing and Service Providers</h3>
+        <p>We do not sell, rent, or trade your personal information, and we do not "share" it for cross-context behavioral advertising. We use the following service providers, which process data on our behalf or under their own privacy policies:</p>
         <ul>
-          <li><strong>Service Providers:</strong> We may use third-party email delivery services to process form submissions. These providers are contractually obligated to protect your data.</li>
-          <li><strong>Legal Requirements:</strong> We may disclose your information if required by law, regulation, or legal process.</li>
+          <li><strong>Formspree, Inc.</strong> (United States): receives and stores form submissions and forwards them to us by email. <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree Privacy Policy</a>.</li>
+          <li><strong>Google LLC, reCAPTCHA v3</strong> (United States): spam protection, used only after you accept it. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>.</li>
+          <li><strong>GitHub, Inc.</strong> (United States): website hosting. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</li>
+          <li><strong>Our email provider:</strong> stores the messages Formspree forwards to us and any email you send us directly.</li>
         </ul>
+        <p>We may also disclose your information if required by law, regulation, or legal process.</p>
 
         <hr>
 
         <h3>4. Data Retention</h3>
         <p>We retain personal information only as long as necessary to fulfill the purposes described in this policy:</p>
         <ul>
-          <li><strong>Contact inquiries:</strong> Retained for up to 12 months after the inquiry is resolved.</li>
+          <li><strong>Contact inquiries:</strong> Retained for up to 12 months after the inquiry is resolved. If you become a client, records are then kept as required by our agreement with you and applicable law.</li>
           <li><strong>Career applications:</strong> Retained for up to 24 months to consider you for future openings, unless you request earlier deletion.</li>
         </ul>
+        <p>When the retention period ends, we delete the data from our email and from Formspree.</p>
 
         <hr>
 
         <h3>5. Data Security</h3>
-        <p>We implement reasonable administrative, technical, and physical safeguards to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+        <p>We implement reasonable administrative, technical, and physical safeguards to protect your personal information from unauthorized access, alteration, disclosure, or destruction. Our website is served over HTTPS. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
 
         <hr>
 
-        <h3>6. Your Rights</h3>
-        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <h3 id="your-rights">6. Your Rights and Data Deletion Requests</h3>
+        <p>Depending on where you live (for example, under the GDPR, UK GDPR, or U.S. state privacy laws), you may have the following rights regarding your personal data:</p>
         <ul>
           <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
           <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
@@ -145,31 +154,39 @@
           <li><strong>Restriction:</strong> Request that we restrict processing of your data.</li>
           <li><strong>Portability:</strong> Request your data in a structured, machine-readable format.</li>
           <li><strong>Objection:</strong> Object to our processing of your personal data.</li>
+          <li><strong>Withdraw consent:</strong> Withdraw consent at any time, without affecting processing that already took place. You can change your cookie choice using the "Cookie Settings" link in the footer.</li>
         </ul>
-        <p>To exercise any of these rights, please contact us at <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a>. We will respond within 30 days.</p>
+        <p><strong>How to request deletion or exercise any right:</strong> email <a href="mailto:info@dataleapsolution.com?subject=Data%20deletion%20request">info@dataleapsolution.com</a> with the subject "Data deletion request" (or "Data access request"), and include the name and email address you used on our forms. We may ask you to confirm the request from that email address so we can verify your identity. We will respond within 30 days, delete the data from our email and from Formspree, and confirm when it is done. We will not discriminate against you for exercising your rights.</p>
+        <p>If you are in the EEA or UK, you also have the right to complain to your local data protection authority.</p>
 
         <hr>
 
         <h3>7. International Visitors</h3>
-        <p>If you are visiting from the European Economic Area (EEA), United Kingdom, or other regions with data protection laws, please note that your information will be transferred to and processed in the United States. By submitting your information through our forms, you consent to this transfer. We process your data on the legal basis of your consent (provided when you submit a form) and our legitimate interest in operating our business.</p>
+        <p>If you are visiting from the European Economic Area (EEA), United Kingdom, or other regions with data protection laws, please note that your information will be transferred to and processed in the United States. We process form submissions on the basis of your consent (given by ticking the consent checkbox) and our legitimate interest in responding to inquiries and running our business. reCAPTCHA is used only on the basis of your consent in our cookie banner.</p>
 
         <hr>
 
         <h3>8. Children's Privacy</h3>
-        <p>Our website and services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If we become aware that we have collected data from a child, we will delete it promptly.</p>
+        <p>Our website and services are intended for businesses and are not directed to individuals under the age of 16. You must be at least 16 to use our contact form and at least 18 to apply for a position. We do not knowingly collect personal information from children. If we learn that we have collected data from a child, we will delete it promptly. If you believe a child has sent us information, please contact us.</p>
 
         <hr>
 
-        <h3>9. Changes to This Policy</h3>
+        <h3>9. Email Communications</h3>
+        <p>We only email you in reply to an inquiry or application you sent us. We do not send newsletters or marketing emails. If we ever start, we will ask for your consent first, and every marketing email will include a working unsubscribe link and our postal address. You can always ask us to stop emailing you by replying "unsubscribe" or writing to <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a>.</p>
+
+        <hr>
+
+        <h3>10. Changes to This Policy</h3>
         <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
 
         <hr>
 
-        <h3>10. Contact Us</h3>
+        <h3>11. Contact Us</h3>
         <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
         <p>Data Leap Solutions Inc<br>
+        5100 North Cliff Ave, Sioux Falls, SD 57104, United States<br>
         Email: <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a><br>
-        Phone: +1 605-370-3803</p>
+        Phone: <a href="tel:+16053703803">+1 605-370-3803</a></p>
 
       </div>
     </section>
@@ -185,12 +202,13 @@
             <img src="assets/img/dataleap-logo-light.svg" alt="DataLeap logo">
           </a>
           <div class="footer-contact pt-3">
-            <p>Based in Sioux Falls, SD</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 605-370-3803</span></p>
-            <p><strong>Email:</strong> <span>info@dataleapsolution.com</span></p>
+            <p>Data Leap Solutions Inc</p>
+            <p>5100 North Cliff Ave<br>Sioux Falls, SD 57104, United States</p>
+            <p class="mt-3"><strong>Phone:</strong> <a href="tel:+16053703803">+1 605-370-3803</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.linkedin.com/in/iammeetpatel/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/iammeetpatel/" target="_blank" rel="noopener noreferrer" aria-label="Meet Patel on LinkedIn (opens in a new tab)"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -199,6 +217,10 @@
           <ul>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="terms-of-service.html#fees-refunds">Refund Policy</a></li>
+            <li><a href="privacy-policy.html#your-rights">Request Data Deletion</a></li>
+            <li><button type="button" class="cookie-settings-btn">Cookie Settings</button></li>
           </ul>
         </div>
 
@@ -212,11 +234,14 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" aria-label="Back to top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Cookie consent -->
+  <script src="assets/js/consent.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

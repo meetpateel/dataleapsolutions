@@ -14,19 +14,20 @@
   --background-color: #f4f8fc; /* Background color for the entire website, including individual sections */
   --default-color: #44556d; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0b1f3a; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1ba5e8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #0a6ea6; /* Darkened from #1ba5e8 to meet WCAG AA 4.5:1 on light backgrounds. Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --accent-strong: #0a6ea6; /* Solid fill behind white text (buttons, badges); 5.5:1 with white */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #20314f;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1ba5e8; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #0a6ea6; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #20314f; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1ba5e8; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #0a6ea6; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -37,6 +38,7 @@
 }
 
 .dark-background {
+  --accent-color: #1ba5e8; /* Bright accent passes 5.9:1 on the dark navy */
   --background-color: #0b1f3a;
   --default-color: #d5e3f3;
   --heading-color: #ffffff;
@@ -191,7 +193,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: linear-gradient(135deg, var(--accent-color), #0e80d0);
+  background: linear-gradient(135deg, var(--accent-strong), #0868a0);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.3px;
@@ -406,7 +408,7 @@ h6 {
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-strong);
     color: var(--contrast-color);
   }
 
@@ -418,7 +420,7 @@ h6 {
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
+    background-color: var(--accent-strong);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
@@ -594,7 +596,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--accent-strong);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -655,13 +657,14 @@ h6 {
   font-weight: 400;
 }
 .page-title {
+    --accent-color: #0a6ea6; /* page-title is light despite .dark-background */
     --default-color: #0b1a33;
     --heading-color: #0b1a33;
     --background-color: #f5f7fb;
 }
     .page-title .breadcrumbs a,
     .page-title .breadcrumbs a:visited {
-        color: #1ba5e8;
+        color: var(--accent-color);
     }
 
 .page-title .breadcrumbs ol li+li {
@@ -741,7 +744,7 @@ section,
   display: block;
   width: 74px;
   height: 3px;
-  background: var(--accent-color);
+  background: var(--accent-strong);
   left: 0;
   right: 0;
   bottom: 0;
@@ -765,7 +768,6 @@ section,
 
 .disclaimer-text {
   font-size: 0.85rem;
-  opacity: 0.7;
 }
 
 /*--------------------------------------------------------------
@@ -828,7 +830,7 @@ section,
   padding: 12px 32px;
   border-radius: 999px;
   transition: 0.3s;
-  background: linear-gradient(135deg, var(--accent-color), #0e80d0);
+  background: linear-gradient(135deg, var(--accent-strong), #0868a0);
   color: var(--contrast-color);
   box-shadow: 0 14px 30px rgba(17, 125, 196, 0.35);
 }
@@ -887,7 +889,7 @@ section,
 }
 
 .about .content .about-btn:hover {
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: var(--contrast-color);
 }
 
@@ -910,7 +912,7 @@ section,
 
 .about .icon-box p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 0;
 }
 
@@ -955,7 +957,7 @@ section,
 }
 
 .tabs .nav-link.active {
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: var(--contrast-color);
   border-color: var(--accent-color);
 }
@@ -1130,7 +1132,7 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 35%); /* 3:1 field boundary (WCAG 1.4.11) */
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -1142,12 +1144,12 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--default-color), transparent 15%); /* placeholders double as visible labels: 4.5:1 */
 }
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--accent-strong);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1205,7 +1207,7 @@ section,
 
 .service-details .services-list a.active {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-strong);
 }
 
 .service-details .services-list a.active i {
@@ -1246,7 +1248,7 @@ section,
 }
 
 .service-details .help-box {
-  background-color: var(--accent-color);
+  background-color: var(--accent-strong);
   color: var(--contrast-color);
   margin-top: 30px;
   padding: 30px 15px;
@@ -1292,3 +1294,105 @@ section,
   color: var(--accent-color);
 }
 
+
+/*--------------------------------------------------------------
+# Accessibility & Consent
+--------------------------------------------------------------*/
+.skip-link:focus {
+  position: fixed !important;
+  top: 10px;
+  left: 10px;
+  z-index: 100000;
+  padding: 10px 18px;
+  background: var(--surface-color);
+  color: var(--heading-color);
+  border: 2px solid var(--accent-strong);
+  border-radius: 6px;
+}
+
+button.mobile-nav-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.nav-link:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.form-consent {
+  text-align: left;
+  font-size: 14px;
+}
+
+.form-consent a {
+  text-decoration: underline;
+}
+
+.footer .footer-links .cookie-settings-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.footer .footer-links .cookie-settings-btn:hover {
+  color: var(--accent-color);
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 99999;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  background: #ffffff;
+  color: #20314f;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(11, 31, 58, 0.25);
+  font-size: 15px;
+}
+
+.cookie-banner h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #0b1f3a;
+}
+
+.cookie-banner p {
+  margin: 0 0 14px;
+}
+
+.cookie-banner a {
+  color: #0a6ea6;
+  text-decoration: underline;
+}
+
+.cookie-banner .cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Equal visual weight for accept and reject: no dark pattern */
+.cookie-banner .cookie-actions button {
+  flex: 1 1 160px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 2px solid #0a6ea6;
+  background: #0a6ea6;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
