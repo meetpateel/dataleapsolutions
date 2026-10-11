@@ -43,6 +43,8 @@
               tokenInput.value = token;
             }
             submitForm(thisForm, action);
+          }).catch(function () {
+            displayError(thisForm, 'Spam protection check failed. Please try again, or email us at <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a>.');
           });
         });
       }).catch(function () {
