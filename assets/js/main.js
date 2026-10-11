@@ -23,6 +23,9 @@
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
+    const isOpen = document.querySelector('body').classList.contains('mobile-nav-active');
+    mobileNavToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    mobileNavToggleBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 

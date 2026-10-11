@@ -4,8 +4,6 @@
 (function () {
   "use strict";
 
-  const RECAPTCHA_SITE_KEY = '6LeQ7oMsAAAAALHmLgRSsAhAGBUVmgcJnqL_WhIh';
-
   let forms = document.querySelectorAll('.php-email-form');
 
   forms.forEach(function (e) {
@@ -24,20 +22,34 @@
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
-      // Execute reCAPTCHA v3 and then submit
-      if (typeof grecaptcha !== 'undefined') {
+      // reCAPTCHA is loaded only after cookie consent (see assets/js/consent.js)
+      let consent = window.DataLeapConsent;
+      if (!consent || !consent.hasRecaptchaConsent()) {
+        displayError(thisForm, 'This form uses Google reCAPTCHA to block spam, which needs your cookie consent. ' +
+          '<button type="button" class="btn btn-link p-0 align-baseline cookie-consent-open">Review cookie settings</button> ' +
+          'or email us at <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a>.');
+        let openBtn = thisForm.querySelector('.cookie-consent-open');
+        if (openBtn && consent) {
+          openBtn.addEventListener('click', function () { consent.showBanner(); });
+        }
+        return;
+      }
+
+      consent.loadRecaptcha().then(function () {
         grecaptcha.ready(function () {
-          grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'submit' }).then(function (token) {
+          grecaptcha.execute(consent.recaptchaSiteKey, { action: 'submit' }).then(function (token) {
             let tokenInput = thisForm.querySelector('.g-recaptcha-response');
             if (tokenInput) {
               tokenInput.value = token;
             }
             submitForm(thisForm, action);
+          }).catch(function () {
+            displayError(thisForm, 'Spam protection check failed. Please try again, or email us at <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a>.');
           });
         });
-      } else {
-        submitForm(thisForm, action);
-      }
+      }).catch(function () {
+        displayError(thisForm, 'Spam protection could not load. Please try again, or email us at <a href="mailto:info@dataleapsolution.com">info@dataleapsolution.com</a>.');
+      });
     });
   });
 
