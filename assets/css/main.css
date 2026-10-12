@@ -1125,6 +1125,9 @@ section,
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
+.contact .php-email-form input[type=tel],
+.contact .php-email-form input[type=url],
+.contact .php-email-form select,
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1137,12 +1140,17 @@ section,
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type=tel]:focus,
+.contact .php-email-form input[type=url]:focus,
+.contact .php-email-form select:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type=tel]::placeholder,
+.contact .php-email-form input[type=url]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 15%); /* placeholders double as visible labels: 4.5:1 */
 }
@@ -1339,7 +1347,8 @@ textarea:focus-visible,
   background: none;
   border: 0;
   padding: 0;
-  color: inherit;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
   font: inherit;
   cursor: pointer;
 }
