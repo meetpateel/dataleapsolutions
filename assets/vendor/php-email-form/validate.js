@@ -80,14 +80,20 @@
         }
       })
       .catch(function (error) {
-        displayError(thisForm, error);
+        // Server/network messages are untrusted: render as text, never HTML
+        displayError(thisForm, error.message, true);
       });
   }
 
-  function displayError(thisForm, error) {
+  function displayError(thisForm, error, asText) {
+    let errorEl = thisForm.querySelector('.error-message');
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    if (asText) {
+      errorEl.textContent = error;
+    } else {
+      errorEl.innerHTML = error;
+    }
+    errorEl.classList.add('d-block');
   }
 
 })();
