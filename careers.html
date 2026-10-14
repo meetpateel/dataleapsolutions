@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; frame-src https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; connect-src 'self' https://formspree.io https://www.google.com/recaptcha/; img-src 'self' data:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Careers | DataLeap</title>
   <meta name="description" content="DataLeap is an early-stage, founder-led company and isn't hiring right now. Independent data and AI specialists can introduce themselves here.">
@@ -164,7 +165,7 @@
           <div class="col-lg-8">
             <form action="https://formspree.io/f/YOUR_APPLICATION_FORM_ID" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
               <input type="hidden" name="_subject" value="New Careers Introduction">
-              <input type="text" name="_gotcha" style="display:none">
+              <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off">
               <div class="row gy-4">
 
                 <div class="col-md-6">
