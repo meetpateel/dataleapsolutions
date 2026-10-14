@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; frame-src https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; connect-src 'self' https://formspree.io https://www.google.com/recaptcha/; img-src 'self' data:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>DataLeap Services | Service Details</title>
   <meta name="description" content="DataLeap services: custom operations apps, paperwork and document automation, back-office reporting, data integration, AI workflows, and support.">
@@ -266,33 +267,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const links = document.querySelectorAll('.services-list a[data-capability]');
-      const sections = document.querySelectorAll('.capability-detail');
-
-      links.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          event.preventDefault();
-          const targetId = link.getAttribute('data-capability');
-
-          links.forEach(function (item) {
-            item.classList.remove('active');
-          });
-          link.classList.add('active');
-
-          sections.forEach(function (section) {
-            section.classList.add('d-none');
-          });
-
-          const targetSection = document.getElementById(targetId);
-          if (targetSection) {
-            targetSection.classList.remove('d-none');
-          }
-        });
-      });
-    });
-  </script>
+  <script src="assets/js/service-details.js"></script>
 
   <!-- Cookie consent -->
   <script src="assets/js/consent.js"></script>
