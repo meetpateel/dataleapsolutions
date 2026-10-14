@@ -1,0 +1,7 @@
+# GitHub Pages builds this repo with Jekyll. Pages are plain HTML (no
+# front matter), so Jekyll copies them as-is. This file only keeps repo
+# docs from being published as pages on the live site.
+exclude:
+  - CLAUDE.md
+  - README.md
+  - LICENSE
